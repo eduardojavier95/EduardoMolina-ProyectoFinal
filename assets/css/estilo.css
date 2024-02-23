@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* Paleta de colores */
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+html {
+  font-size: 62.5%; /* cambia el tamaño de la fuente a 10px */
+  /* 1rem=10px */
+}
+
+body {
+  font-family: "Roboto", sans-serif; /* Cambia la fuente del texto */
+  font-size: 2rem; /* Tamaño de la fuente */
+  padding: 16px;
+}
+
+/* Main index */
+.hero {
+  background-image: url(../images/banner.jpg);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.latest-news {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.contenido {
+  text-align: justify; /* Alinea horizontalmente el texto */
+  color: #041562; /* Color del texto */
+  font-size: 1.6rem; /* Tamaño de la fuente */
+  line-height: 2.5rem; /* Ajusta el espacio entre líneas del texto */
+  width: 1000px;
+  margin: 32px;
+}
+
+.cover-course {
+  width: 100%;
+  height: 281px;
+}
+
+.section-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto {
+  width: auto;
+  margin: 40px;
+}
+
+.btn-my-color {
+  background-color: #0facac;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Agregar transform */
+}
+.btn-my-color:hover {
+  background-color: #0b7d7d;
+  transform: scale(1.05); /* Agrandar ligeramente en hover */
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer .footer-section {
+  margin-bottom: 20px;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  transition: color 0.2s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffffff;
+}/*# sourceMappingURL=estilo.css.map */
