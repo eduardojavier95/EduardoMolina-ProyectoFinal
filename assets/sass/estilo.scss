@@ -6,8 +6,8 @@ $tamano-base: 1.6rem; // Tamaño de fuente base
 $espaciado-base: 16px; // Espaciado base
 
 // Mixins
-@mixin transition($properties: all 0.3s) {
-  transition: $properties;
+@mixin transition($properties...) { // Acepta múltiples argumentos
+    transition: $properties;
 }
 
 // Importaciones
@@ -77,8 +77,8 @@ body {
     padding: 10px 20px;
     font-size: $tamano-base;
     cursor: pointer;
-    @include transition(background-color 0.3s, transform 0.3s);
-    
+    @include transition("background-color 0.3s, transform 0.3s");
+
     &:hover {
         background-color: darken(#0facac, 10%);
         transform: scale(1.05);
@@ -90,27 +90,31 @@ body {
     background-color: #343a40;
     color: white;
     padding: 40px 0;
+
     .footer-section {
         margin-bottom: 20px;
     }
+
     h5 {
         margin-bottom: 20px;
     }
+
     a {
         color: rgba(255, 255, 255, 0.7);
-        @include transition(color 0.2s);
-        
+        @include transition("color 0.2s");
+
         &:hover {
             color: #ffffff;
             text-decoration: none;
         }
     }
+
     .social-icons a {
         display: inline-block;
         margin-right: 10px;
         font-size: 24px;
-        @include transition(color 0.2s);
-        
+        @include transition("color 0.2s");
+
         &:hover {
             color: #ffffff;
         }

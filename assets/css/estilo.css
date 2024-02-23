@@ -1,20 +1,20 @@
-@charset "UTF-8";
-/* Paleta de colores */
-/* Font */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
-/* font-family: 'Roboto', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
-  font-size: 62.5%; /* cambia el tamaño de la fuente a 10px */
-  /* 1rem=10px */
+  font-size: 62.5%;
 }
 
 body {
-  font-family: "Roboto", sans-serif; /* Cambia la fuente del texto */
-  font-size: 2rem; /* Tamaño de la fuente */
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
   padding: 16px;
 }
 
-/* Main index */
 .hero {
   background-image: url(../images/banner.jpg);
   background-size: cover;
@@ -29,10 +29,10 @@ body {
 }
 
 .contenido {
-  text-align: justify; /* Alinea horizontalmente el texto */
-  color: #041562; /* Color del texto */
-  font-size: 1.6rem; /* Tamaño de la fuente */
-  line-height: 2.5rem; /* Ajusta el espacio entre líneas del texto */
+  text-align: justify;
+  color: #041562;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
   width: 1000px;
   margin: 32px;
 }
@@ -61,47 +61,38 @@ body {
   padding: 10px 20px;
   font-size: 1.6rem;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Agregar transform */
+  transition: "background-color 0.3s, transform 0.3s";
 }
 .btn-my-color:hover {
   background-color: #0b7d7d;
-  transform: scale(1.05); /* Agrandar ligeramente en hover */
+  transform: scale(1.05);
 }
 
-/* Footer */
 .footer {
   background-color: #343a40;
   color: white;
   padding: 40px 0;
 }
-
 .footer .footer-section {
   margin-bottom: 20px;
 }
-
 .footer h5 {
-  color: #fff;
   margin-bottom: 20px;
 }
-
 .footer a {
   color: rgba(255, 255, 255, 0.7);
-  transition: color 0.2s;
+  transition: "color 0.2s";
 }
-
 .footer a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-
 .footer .social-icons a {
   display: inline-block;
   margin-right: 10px;
-  color: rgba(255, 255, 255, 0.7);
   font-size: 24px;
-  transition: color 0.2s;
+  transition: "color 0.2s";
 }
-
 .footer .social-icons a:hover {
   color: #ffffff;
 }/*# sourceMappingURL=estilo.css.map */
